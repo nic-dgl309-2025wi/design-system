@@ -1,0 +1,113 @@
+/* -------- THE STACK -------- */
+.l-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  /* for large spacing */
+  .l-stack-large > * + * {
+    /* margin-top: var(--s5); */
+    margin-top: var(--s8);
+  }
+  
+  /* for small spacing */
+  .l-stack-small > * + * {
+    margin-top: var(--s2);
+  }
+  
+ /* -------- THE BOX -------- */
+  .l-box {
+    padding: var(--s2); 
+    border: 2px solid var(--clr-greyscale-400);  
+    border-radius: 8px;
+  }
+  
+  /* to support inversion for dark/light modes */
+  .l-box * {
+    color: inherit;
+  }
+  
+  .l-box--invert {
+    /* â†“ Dark becomes light, and light becomes dark */
+    color: var(--clr-greyscale-200);
+    background-color: var(--clr-greyscale-800);
+  }
+  
+ /* -------- THE CENTER -------- */
+  .l-center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .l-center--content {
+        max-width: clamp(200px, 80%, 1024px);
+    }
+
+    .l-center--full {
+        max-width: 100%; 
+    }
+  
+    .l-center--intrinsic {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+ /* -------- THE CLUSTER -------- */
+  .l-cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s1); 
+  }
+  
+  .l-cluster--inline {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .l-cluster--block {
+    justify-content: flex-start;
+  }
+  
+ /* -------- THE SIDEBAR -------- */
+  .l-with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s0); 
+  }
+  
+  .l-sidebar {
+    flex-basis: 15rem; 
+    flex-grow: 1;
+  }
+  
+  .l-not-sidebar {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%; 
+  }
+  
+/* -------- THE GRID -------- */
+  .l-grid {
+    display: grid;
+    gap: var(--s0); /* arbitrary value */
+  }
+
+  .l-grid--icon {
+      grid-template-columns: 
+        repeat(auto-fit, 
+        minmax(min(80px, 100%), 1fr)); 
+      justify-items: center;
+  }
+  
+  @supports (width: min(250px, 100%)) { /* arbitrary value for min */
+    .l-grid--all {
+      grid-template-columns: 
+        repeat(auto-fit, 
+        minmax(min(250px, 100%), 1fr)); /* arbitrary value for min */
+    }
+  }
+  
+
+  

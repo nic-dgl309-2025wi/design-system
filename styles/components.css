@@ -1,0 +1,44 @@
+/* -------- ICONS -------- */
+.c-icon {
+    width: 5rem;
+    height: 5rem;
+    z-index: 999;
+}
+
+.c-icon--grid {
+    rotate: 90deg;
+    justify-self: center;
+}
+
+.c-icon__label {
+    font-size: var(--s-1);
+    text-align: center;
+}
+
+/* -------- BUTTONS -------- */
+.c-button {
+    max-width: 100%;
+    padding: var(--s0); 
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-family-alternate);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-loose);
+    background-color: var(--clr-pink-500);
+    color: var(--clr-greyscale-100);
+    outline: 2px solid var(--clr-pink-500); 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.c-button:hover {  
+    background-color: var(--clr-greyscale-100);
+    color: var(--clr-pink-500);
+}
+
+@media (min-width: 768px) {
+    .c-button {
+        width: 250px;
+    }
+}
+

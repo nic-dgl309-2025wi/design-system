@@ -1,0 +1,89 @@
+:root {
+  /* -------- COLOURS -------- */
+  --clr-greyscale-000: #ffff;
+  --clr-greyscale-100: #fbfbfb;
+  --clr-greyscale-200: #faf7eb;
+  --clr-greyscale-300: #ecefe1;
+  --clr-greyscale-400: #d4dcce;
+  --clr-greyscale-500: #b0b7a5;
+  --clr-greyscale-600: #89927b;
+  --clr-greyscale-700: #636c5a;
+  --clr-greyscale-800: #3d4339;
+  --clr-greyscale-900: #212322;
+
+  --clr-green-300: #b5b668;
+  --clr-green-500: #737438;
+  --clr-green-700: #454522;
+
+  --clr-yellow-300: #ffd447;
+  --clr-yellow-500: #f5bf18;
+  --clr-yellow-700: #b78e2e;
+
+  --clr-orange-300: #e2733a;
+  --clr-orange-500: #bf5428;
+  --clr-orange-700: #7c3719;
+
+  --clr-cream-300: #faf7eb; /* primary */
+  --clr-cream-500: #f3ebce;
+  --clr-cream-700: #ebdead;
+
+  --clr-blue-300: #269ad1;
+  --clr-blue-500: #1c5c7d;
+  --clr-blue-700: #0b3344;
+
+  --clr-pink-300: #e1527b;
+  --clr-pink-500: #bf204e;
+  --clr-pink-700: #7a1532;
+
+  --clr-purple-300: #8b4c94;
+  --clr-purple-500: #59315f;
+  --clr-purple-700: #321b36;
+
+  /* -------- FONTS -------- */
+  /* Font Family */
+  --font-family-primary: "Atkinson Hyperlegible", serif;
+  --font-family-secondary: "zenon", serif;
+  --font-family-alternate: "interstate", sans-serif;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.05rem;
+  --letter-spacing-loose: 0.05rem;
+
+  /* Font Style */
+  --font-style-italic: italic;
+
+  /* Font Size */
+  --font-size-base: var(--s0);
+  --font-size-sm: var(--s-1);
+  --font-size-xs: var(--s-2);
+  --font-size-lg: var(--s1);
+  --font-size-xl: var(--s2);
+  --font-size-2xl: var(--s3);
+  --font-size-3xl: var(--s4);
+  --font-size-4xl: var(--s5);
+
+  /* Text Transform */
+  --text-transform-uppercase: uppercase;
+
+  /* -------- SPACING -------- */
+  --spacing-ratio: 1.2;
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--spacing-ratio));
+  --s2: calc(var(--s1) * var(--spacing-ratio));
+  --s3: calc(var(--s2) * var(--spacing-ratio));
+  --s4: calc(var(--s3) * var(--spacing-ratio));
+  --s5: calc(var(--s4) * var(--spacing-ratio));
+  --s6: calc(var(--s5) * var(--spacing-ratio));
+  --s7: calc(var(--s6) * var(--spacing-ratio));
+  --s8: calc(var(--s7) * var(--spacing-ratio));
+  --s-1: calc(var(--s0) / var(--spacing-ratio));
+  --s-2: calc(var(--s-1) / var(--spacing-ratio));
+  --s-3: calc(var(--s-2) / var(--spacing-ratio));
+  --s-4: calc(var(--s-3) / var(--spacing-ratio));
+  --s-5: calc(var(--s-4) / var(--spacing-ratio));
+}
